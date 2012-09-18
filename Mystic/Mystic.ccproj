@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>1.7</ProductVersion>
+    <ProjectGuid>bca688af-985d-4e37-8db1-d7cc7b331f3c</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mystic</RootNamespace>
+    <AssemblyName>Mystic</AssemblyName>
+    <StartDevelopmentStorage>True</StartDevelopmentStorage>
+    <Name>Mystic</Name>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <!-- Items for the project -->
+  <ItemGroup>
+    <ServiceDefinition Include="ServiceDefinition.csdef" />
+    <ServiceConfiguration Include="ServiceConfiguration.Local.cscfg" />
+    <ServiceConfiguration Include="ServiceConfiguration.Cloud.cscfg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Mystic.Cache\Mystic.Data.Cache.csproj">
+      <Name>Mystic.Data.Cache</Name>
+      <Project>{a7d6f5b4-9daa-450f-898d-a3a6a4d5c98d}</Project>
+      <Private>True</Private>
+      <RoleType>Worker</RoleType>
+      <RoleName>Mystic.Data.Cache</RoleName>
+      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
+    </ProjectReference>
+    <ProjectReference Include="Mystic.Data\Mystic.Service.REST.csproj">
+      <Name>Mystic.Service.REST</Name>
+      <Project>{3abd9c24-5cbe-49de-9d44-67aa1372a062}</Project>
+      <Private>True</Private>
+      <RoleType>Web</RoleType>
+      <RoleName>Mystic.Service.REST</RoleName>
+      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
+    </ProjectReference>
+    <ProjectReference Include="Mystic.UI\Mystic.Web.UI.csproj">
+      <Name>Mystic.Web.UI</Name>
+      <Project>{f4c82870-d974-49ba-9622-001a31e6280c}</Project>
+      <Private>True</Private>
+      <RoleType>Web</RoleType>
+      <RoleName>Mystic.Web.UI</RoleName>
+      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
+    </ProjectReference>
+  </ItemGroup>
+  <!-- Import the target files for this project template -->
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+    <CloudExtensionsDir Condition=" '$(CloudExtensionsDir)' == '' ">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Windows Azure Tools\1.7\</CloudExtensionsDir>
+  </PropertyGroup>
+  <Import Project="$(CloudExtensionsDir)Microsoft.WindowsAzure.targets" />
+</Project>
