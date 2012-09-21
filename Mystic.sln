@@ -1,19 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "Mystic", "Mystic.ccproj", "{BCA688AF-985D-4E37-8DB1-D7CC7B331F3C}"
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "Mystic", "Mystic\Mystic.ccproj", "{BCA688AF-985D-4E37-8DB1-D7CC7B331F3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mystic.Web.UI", "Mystic.UI\Mystic.Web.UI.csproj", "{F4C82870-D974-49BA-9622-001A31E6280C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mystic.Web.UI", "Mystic\Mystic.UI\Mystic.Web.UI.csproj", "{F4C82870-D974-49BA-9622-001A31E6280C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mystic.Web.UI.Tests", "Mystic.UI.Tests\Mystic.Web.UI.Tests.csproj", "{A81B9CEE-11B7-46CD-9821-2E6F2B36682E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mystic.Web.UI.Tests", "Mystic\Mystic.UI.Tests\Mystic.Web.UI.Tests.csproj", "{A81B9CEE-11B7-46CD-9821-2E6F2B36682E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mystic.Service.REST", "Mystic.Data\Mystic.Service.REST.csproj", "{3ABD9C24-5CBE-49DE-9D44-67AA1372A062}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mystic.Service.REST", "Mystic\Mystic.Data\Mystic.Service.REST.csproj", "{3ABD9C24-5CBE-49DE-9D44-67AA1372A062}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mystic.Data.Cache", "Mystic.Cache\Mystic.Data.Cache.csproj", "{A7D6F5B4-9DAA-450F-898D-A3A6A4D5C98D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mystic.Data.Cache", "Mystic\Mystic.Cache\Mystic.Data.Cache.csproj", "{A7D6F5B4-9DAA-450F-898D-A3A6A4D5C98D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mystic.Common", "..\Mystic.Common\Mystic.Common.csproj", "{ADB6B807-9FAF-4234-A2C7-EDEEBB7E79E5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mystic.Common", "Mystic.Common\Mystic.Common.csproj", "{ADB6B807-9FAF-4234-A2C7-EDEEBB7E79E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mystic.DAL", "Mystic.DAL\Mystic.DAL.csproj", "{989DEB64-577D-4628-889A-285C21F34957}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mystic.DAL", "Mystic\Mystic.DAL\Mystic.DAL.csproj", "{989DEB64-577D-4628-889A-285C21F34957}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
