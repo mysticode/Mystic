@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mystic.Service.REST", "Myst
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mystic.Data.Cache", "Mystic\Mystic.Cache\Mystic.Data.Cache.csproj", "{A7D6F5B4-9DAA-450F-898D-A3A6A4D5C98D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mystic.Common", "Mystic.Common\Mystic.Common.csproj", "{ADB6B807-9FAF-4234-A2C7-EDEEBB7E79E5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mystic.Common", "Mystic\Mystic.Common\Mystic.Common.csproj", "{ADB6B807-9FAF-4234-A2C7-EDEEBB7E79E5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mystic.DAL", "Mystic\Mystic.DAL\Mystic.DAL.csproj", "{989DEB64-577D-4628-889A-285C21F34957}"
 EndProject
