@@ -46,7 +46,7 @@
     <Compile Include="SqlDbFactory.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Mystic.Common\Mystic.Common.csproj">
+    <ProjectReference Include="..\Mystic.Common\Mystic.Common.csproj">
       <Project>{adb6b807-9faf-4234-a2c7-edeebb7e79e5}</Project>
       <Name>Mystic.Common</Name>
     </ProjectReference>
