@@ -1,0 +1,16 @@
+/Mystic/bin
+/Mystic/obj
+/Mystic.Common/bin
+/Mystic.Common/obj
+/Mystic/Mystic.Cache/obj
+/Mystic/Mystic.Cache/bin
+/mystic/Mystic.DAL/obj
+/mystic/Mystic.DAL/bin
+/mystic/Mystic.Data/obj
+/mystic/Mystic.Data/bin
+/mystic/Mystic.DTO/obj
+/mystic/Mystic.DTO/bin
+/mystic/Mystic.UI/obj
+/mystic/Mystic.UI/bin
+/mystic/Mystic.UI.Tests/obj
+/mystic/Mystic.UI.Tests/bin
